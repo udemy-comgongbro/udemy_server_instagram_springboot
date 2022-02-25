@@ -1,5 +1,6 @@
 package com.example.demo.src.user.model;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,10 +8,16 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class PatchUserReq {
-    private String name;
+public class GetUserInfoRes {
+    private int userIdx;
     private String nickName;
+    private String name;
+    private String profileImgUrl;
     private String website;
     private String introduction;
-    private String profileImgUrl;
+    private int followerCount;
+    private int followingCount;
+    private int postCount;
+
+
 }

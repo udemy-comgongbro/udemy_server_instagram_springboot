@@ -1,4 +1,4 @@
-package com.example.demo.src.user.model;
+package com.example.demo.src.auth.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,10 +7,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class PatchUserReq {
+public class User {
+    private int userIdx;
     private String name;
     private String nickName;
-    private String website;
-    private String introduction;
-    private String profileImgUrl;
+    private String email;
+    private String pwd;
 }
